@@ -1,4 +1,4 @@
-package practise3;
+package variables.practise3;
 
 import java.util.Scanner;
 
