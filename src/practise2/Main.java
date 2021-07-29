@@ -6,6 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /*
+            Java ile kullanıcıdan alınan para değerinin KDV'li fiyatını
+            ve KDV tutarını hesaplayıp ekrana bastıran programı yazın.
+        */
+
         Scanner input = new Scanner(System.in);
         double cost, taxedCost, taxAmount;
         float taxRate;
