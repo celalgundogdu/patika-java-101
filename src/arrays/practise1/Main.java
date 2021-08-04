@@ -13,7 +13,7 @@ public class Main {
             harmonicSum += 1.0 / array[i];
         }
         double harmonicMean = n / harmonicSum;
-        System.out.println(harmonicSum);
+        System.out.println(harmonicMean);
 
     }
 
