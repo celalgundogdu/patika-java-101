@@ -54,3 +54,25 @@ WHERE title ILIKE '%T%T%T%T%';
 -- film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
 SELECT * FROM film
 WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99;
+
+
+
+-- ÖDEV 3
+
+-- film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.
+SELECT DISTINCT replacement_cost FROM film;
+
+-- film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?
+SELECT COUNT(DISTINCT replacement_cost) FROM film;
+
+-- film tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
+SELECT COUNT(*) FROM film
+WHERE title LIKE 'T%' AND rating = 'G';
+
+-- country tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
+SELECT COUNT(country) FROM country
+WHERE LENGTH(country) = 5;  -- WHERE country LIKE '_____';
+
+-- city tablosundaki şehir isimlerinin kaçtanesi 'R' veya r karakteri ile biter?
+SELECT COUNT(city) FROM city
+WHERE city ILIKE '%R';
